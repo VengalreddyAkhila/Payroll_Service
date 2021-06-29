@@ -32,3 +32,15 @@ select *from EmployeePayroll
 
 Select Salary from EmployeePayroll Where EmployeeName='Anuhya'
 Select Salary from EmployeePayroll Where StartDate BETWEEN CAST('2021-07-08' as date) and GetDate();
+
+//..UC6:- Add gender to employeetable and correct employee gender
+
+Alter Table EmployeePayroll
+Add Gender varchar(32);
+
+UPDATE EmployeePayroll set Gender ='FeMale' where EmployeeName='Akhila'
+UPDATE EmployeePayroll set Gender ='FeMale' where EmployeeName='Anuhya'
+UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Ramu Sham'
+UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Venu'
+UPDATE EmployeePayroll set Gender ='male' where EmployeeName='Prasad'
+UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Radhika'
