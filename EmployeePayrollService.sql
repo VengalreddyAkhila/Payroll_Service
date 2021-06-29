@@ -1,11 +1,11 @@
 
-UC-1:-create a payroll service database
+//..UC-1:-create a payroll service database
 
 create database EmployeePayroll
 
 use EmployeePayroll
 
-UC-2:-create payrollservice table
+//..UC-2:-create payrollservice table
 
 create Table EmployeePayroll(
 EmployeeID int Identity(1,1) primary key,
@@ -14,7 +14,7 @@ Salary float,
 StartDate date
 )
 
-UC-3:-CRUD operation
+//..UC-3:-CRUD operation
 
 Insert into EmployeePayroll(EmployeeName,Salary,StartDate)
 VALUES ('Akhila', 80000.00 , '2020-09-12'),
@@ -23,3 +23,7 @@ VALUES ('Akhila', 80000.00 , '2020-09-12'),
 		('Venu',45000.00, '2021-05-08'),
 		('Prasad',40000.00, '2021-06-24'),
 		('Radhika',35000.00, '2021-07-20');
+
+//..UC-4:- Retrieve all data from employeeparoll table
+
+select *from EmployeePayroll
