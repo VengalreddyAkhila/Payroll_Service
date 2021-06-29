@@ -27,3 +27,8 @@ VALUES ('Akhila', 80000.00 , '2020-09-12'),
 //..UC-4:- Retrieve all data from employeeparoll table
 
 select *from EmployeePayroll
+
+//..UC5:-particular employee as well as all employees who have joined in particular date range 
+
+Select Salary from EmployeePayroll Where EmployeeName='Anuhya'
+Select Salary from EmployeePayroll Where StartDate BETWEEN CAST('2021-07-08' as date) and GetDate();
