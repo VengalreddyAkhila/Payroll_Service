@@ -57,3 +57,12 @@ Select SUM(Salary) from EmployeePayroll where Gender = 'Male' GROUP BY Gender;
 Select AVG(Salary) from EmployeePayroll where Gender = 'Female' GROUP BY Gender;
 Select AVG(Salary) from EmployeePayroll where Gender = 'Male' GROUP BY Gender;
 
+
+//--Section 2:-(ER Diagram)
+//--UC8-Extend the EmployeePayroll table with Phone, address and department
+Alter Table EmployeePayroll Add
+PhoneNumber varchar(10),
+Department varchar(30),
+Address varchar(30), 
+CONSTRAINT DF_Address DEFAULT 'Indian' FOR Address
+
